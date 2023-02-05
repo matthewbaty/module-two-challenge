@@ -20,9 +20,6 @@
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
-    
-    
-
 }
 
 .hero {
@@ -39,51 +36,110 @@
     align-items: center;
   }
   
-  .about-me-title {
+.about-me-title {
     width: 20%;
     padding: 20px;
     border-right: 5px solid gray;
     text-align: right;
   }
   
-  .about-me-text {
+.about-me-text {
     width: 80%;
     padding: 20px;
     text-align: left;
   }
   
-  h2 {
+h2 {
     font-size: 36px;
     margin: 0;
   }
   
-  .work-container {
+.work-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
   }
 
-  .work-title {
+.work-title {
     width: 20%;
     padding: 20px;
     border-right: 5px solid gray;
     text-align: right;
   }
 
-  .work-images {
-    width: 70%;
+.work-images {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      width: 80%;
+      flex-direction: row;
+  }
+
+.large-work-image {
+    width: 99%;
+  }
+
+.large-work-image a img {
+    width: 99%;
+    margin: 1%;
+  }
+
+.small-work-images {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-  }
-
-  .large-work-image {
     width: 100%;
+    flex-direction: row;
   }
 
+.small-work-images a {
+    width: 48%;
+    margin: 1%;
+  }
+
+.small-work-images a img {
+    width: 100%;
+    height: auto;
+  } 
+
+.contact-me-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.contact-me-title {
+    width: 20%;
+    padding: 20px;
+    border-right: 5px solid gray;
+    text-align: right;
+  }
+  
+.contact-me-text {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+.contact-me-text ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin: 1%;
+}
+
+.contact-info {
+    margin-right: 10px;
+}
 /* styles for screens with width less than 600px */
 @media only screen and (max-width: 600px) {
   body {
     font-size: 16px;
+  }
+  .small-work-images a {
+    width: 100%;
   }
 }
 
