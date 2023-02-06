@@ -92,23 +92,21 @@ p {
   }
 
 .small-work-images {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
-    position: relative;
 }
 
 .small-work-images a {
     width: 48%;
     margin: 1%;
-    /* position: relative; */
   }
 
 .small-work-images a img {
     width: 100%;
     height: 100%;
-    /* position: relative; */
   } 
 
 .contact-me-container {
@@ -149,25 +147,100 @@ p {
     bottom: 30px;
     left: 10px;
     background-color: darkcyan;
-    padding: 20px;
     color: white;
-    float: inline-start;
+    padding: 20px;
 }
+
 /* styles for screens with width less than 600px */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
   .small-work-images a {
     width: 100%;
   }
+  .header {
+    height: 100px;
+}
+.header nav {
+    margin-right: 35px;
+}
+.header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.header h1 {
+    display:flex;
+    justify-content: left;
+    font-size: 40px;
+    text-align: left;
+}
+
+.about-me-title {
+    width: 20%;
+    padding: 20px;
+    border-right: 5px solid gray;
+    text-align: left;
+  }
+h2 {
+    font-size: 13px;
+}
+.contact-me-title {
+    text-align: left;
+  }
+.work-title {
+    text-align: left;
+  }
+.image-title {
+    position: absolute;
+    bottom: 5px;
+    left: 3px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+}
+.contact-me-text ul {
+    padding: 15px;
+}
+.contact-me-text ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
 }
 
 /* styles for screens with width between 600px and 1200px */
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-  body {
+.header{
+    height: 100px;
+}
+.header nav {
+    padding-top: 9px;
+    float: right;
+    font-size: 20px;
+    margin-right: 0;
+}
+body {
     font-size: 18px;
   }
+.about-me-title {
+    text-align: left;
+  }
+.work-title {
+    text-align: left;
+}
+.contact-me-title {
+    text-align: left;
+}
+h2 {
+    font-size: 20px;
+}
+  .header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
 }
 
 /* styles for screens with width greater than 1200px */
@@ -175,4 +248,4 @@ p {
   body {
     font-size: 20px;
   }
-}
+} 
