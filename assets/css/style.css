@@ -24,7 +24,7 @@
 
 .hero {
     max-width: 100%;
-    height: 1000px;
+    height: 1200px;
     margin-bottom: 5px;
     background-image: url("../images/my-family3.png");
     background-size: cover;
@@ -82,17 +82,20 @@ p {
 
 .large-work-image {
     width: 100%;
+}
+
+.large-work-image a {
+    margin: 1%;
     position: relative;
-  }
+}
 
 
 .large-work-image a img {
     width: 98%;
-    margin: 1%;
+    /* margin: 1%; */
   }
 
 .small-work-images {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -100,9 +103,10 @@ p {
 }
 
 .small-work-images a {
+    position: relative;
     width: 48%;
     margin: 1%;
-  }
+}
 
 .small-work-images a img {
     width: 100%;
@@ -145,7 +149,7 @@ p {
 .image-title {
     position: absolute;
     bottom: 30px;
-    left: 10px;
+    left: 0px;
     background-color: darkcyan;
     color: white;
     padding: 20px;
@@ -207,6 +211,7 @@ h2 {
 .contact-me-text ul li {
     display: inline-block;
     margin-left: 25px;
+    padding: 3px
 }
 }
 
